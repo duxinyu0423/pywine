@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow1</class>
+ <widget class="QMainWindow" name="MainWindow1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>746</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Switch</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>20</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>341</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Buttonchoose">
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="placeholderText">
+        <string>请选择文件路径（所有已安装软件默认在/home/username/.wine/drive_c/Program Files (x86)路径下）</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>321</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="labelpicture">
+       <property name="text">
+        <string>这里应该有一张图片</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>   Switch can run windows application on Linux</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Buttonrun">
+       <property name="text">
+        <string>安装/运行</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>746</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionChoose"/>
+   </widget>
+   <widget class="QMenu" name="menusoft">
+    <property name="title">
+     <string>常用软件</string>
+    </property>
+    <widget class="QMenu" name="menubangongruanjian">
+     <property name="title">
+      <string>办公软件</string>
+     </property>
+     <addaction name="actionWPS"/>
+     <addaction name="separator"/>
+     <addaction name="actionTencentMeeting"/>
+     <addaction name="separator"/>
+     <addaction name="actionDingDing"/>
+    </widget>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>通讯软件</string>
+     </property>
+     <addaction name="actionQQ"/>
+     <addaction name="separator"/>
+     <addaction name="actionWeChat"/>
+    </widget>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>娱乐软件</string>
+     </property>
+     <addaction name="actionsteam"/>
+     <addaction name="separator"/>
+     <addaction name="actionWeGame"/>
+    </widget>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>影视软件</string>
+     </property>
+     <addaction name="actionTencentVedio"/>
+     <addaction name="separator"/>
+     <addaction name="actionAiqiyiVedio"/>
+    </widget>
+    <widget class="QMenu" name="menuMusic">
+     <property name="title">
+      <string>音乐软件</string>
+     </property>
+     <addaction name="actionQQMusic"/>
+     <addaction name="separator"/>
+     <addaction name="actionCloudMusic"/>
+     <addaction name="separator"/>
+     <addaction name="actionfoobar2000"/>
+    </widget>
+    <addaction name="menubangongruanjian"/>
+    <addaction name="separator"/>
+    <addaction name="menu"/>
+    <addaction name="separator"/>
+    <addaction name="menu_2"/>
+    <addaction name="separator"/>
+    <addaction name="menu_3"/>
+    <addaction name="separator"/>
+    <addaction name="menuMusic"/>
+   </widget>
+   <widget class="QMenu" name="menuhelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionzh"/>
+   </widget>
+   <widget class="QMenu" name="menufixer">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionwineinstall"/>
+    <addaction name="separator"/>
+    <addaction name="actioncfg"/>
+    <addaction name="separator"/>
+    <addaction name="actiontxt"/>
+    <addaction name="separator"/>
+    <addaction name="actionreboot"/>
+    <addaction name="separator"/>
+    <addaction name="actiondelete"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menusoft"/>
+   <addaction name="menufixer"/>
+   <addaction name="menuhelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionChoose">
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+  </action>
+  <action name="actionQQ">
+   <property name="text">
+    <string>QQ</string>
+   </property>
+  </action>
+  <action name="actionWeChat">
+   <property name="text">
+    <string>WeChat</string>
+   </property>
+  </action>
+  <action name="actionWPS">
+   <property name="text">
+    <string>Wps</string>
+   </property>
+  </action>
+  <action name="actionWeChat_2">
+   <property name="text">
+    <string>WeChat</string>
+   </property>
+  </action>
+  <action name="actionWPS_2">
+   <property name="text">
+    <string>WPS</string>
+   </property>
+  </action>
+  <action name="actionzh">
+   <property name="text">
+    <string>中文乱码解决</string>
+   </property>
+  </action>
+  <action name="actioncfg">
+   <property name="text">
+    <string>wine设置</string>
+   </property>
+  </action>
+  <action name="actiontxt">
+   <property name="text">
+    <string>wine文档</string>
+   </property>
+  </action>
+  <action name="actiondelete">
+   <property name="text">
+    <string>软件卸载</string>
+   </property>
+  </action>
+  <action name="actionreboot">
+   <property name="text">
+    <string>wine重启</string>
+   </property>
+  </action>
+  <action name="actionTencentMeeting">
+   <property name="text">
+    <string>腾讯会议</string>
+   </property>
+  </action>
+  <action name="actionsteam">
+   <property name="text">
+    <string>Steam</string>
+   </property>
+  </action>
+  <action name="actionDingDing">
+   <property name="text">
+    <string>钉钉</string>
+   </property>
+  </action>
+  <action name="actionQQGame">
+   <property name="text">
+    <string>QQ游戏</string>
+   </property>
+  </action>
+  <action name="actionWeGame">
+   <property name="text">
+    <string>WeGame</string>
+   </property>
+  </action>
+  <action name="actionTencentVedio">
+   <property name="text">
+    <string>腾讯视频</string>
+   </property>
+  </action>
+  <action name="actionAiqiyiVedio">
+   <property name="text">
+    <string>爱奇艺</string>
+   </property>
+  </action>
+  <action name="actionQQMusic">
+   <property name="text">
+    <string>QQ音乐</string>
+   </property>
+  </action>
+  <action name="actionCloudMusic">
+   <property name="text">
+    <string>网易云音乐</string>
+   </property>
+  </action>
+  <action name="actionfoobar2000">
+   <property name="text">
+    <string>foobar2000</string>
+   </property>
+  </action>
+  <action name="actionwineinstall">
+   <property name="text">
+    <string>wine安装</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
